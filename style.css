@@ -1,0 +1,145 @@
+@font-face {
+  font-family: Inter;
+  src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: inherit;
+}
+
+body {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --DarkGrey: hsl(0, 0%, 12%);
+  --OffBlack: hsl(0, 0%, 8%);
+  background: var(--OffBlack);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+  color: white;
+}
+body img {
+  display: block;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+body .container {
+  background: var(--DarkGrey);
+  width: 24rem;
+  padding: 2.25rem 2.5rem;
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.75rem;
+  transition: width 0.1s ease-in-out;
+}
+body .container img {
+  border-radius: 50%;
+}
+body .container .title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+body .container .title h1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+body .container .title h2 {
+  font-size: 0.75rem;
+  color: var(--Green);
+  font-weight: 600;
+}
+body .container .description h4 {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+body .container .links {
+  display: grid;
+  gap: 0.875rem;
+  width: 100%;
+}
+body .container .links div {
+  height: 3rem;
+  border-radius: 0.5rem;
+  background: var(--Grey);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s background ease-in-out, 0.2s color ease-in-out;
+}
+body .container .links div h3 {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+body .container .links div:hover {
+  background: var(--Green);
+}
+body .container .links div:hover h3 {
+  color: black;
+  font-weight: 600;
+}
+@media screen and (max-width: 500px) {
+  body .container {
+    width: 20.375rem;
+    padding: 1.25rem;
+  }
+}
+body .attribution {
+  position: fixed;
+  width: 100vw;
+  text-align: center;
+  bottom: 0;
+  padding: 1rem;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: hsl(75, 89%, 73%);
+  opacity: 75%;
+  transition: all 0.2s ease-in-out;
+}
+body .attribution a {
+  color: white;
+  font-weight: 600;
+  background-image: linear-gradient(to right, white, hsl(75, 79%, 91%) 33.33333%, hsl(75, 93%, 62%) 66.66666%, hsl(110, 92%, 52%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300% 100%;
+  background-position: top left;
+  transition: all 0.8s ease-in-out;
+}
+body .attribution a:hover {
+  background-position: top left 100%;
+}
+body .attribution:hover {
+  background: var(--DarkGrey);
+  box-shadow: 0px -5px 10px var(--DarkGrey);
+  background: black;
+  box-shadow: 0px -5px 10px black;
+  color: var(--White);
+  opacity: 100%;
+}/*# sourceMappingURL=style.css.map */
